@@ -1,0 +1,142 @@
+body{
+    background-color: #313131;
+    color: aliceblue;
+    margin-bottom: 3000px;
+}
+.box{
+    text-align: center;
+    margin-bottom: 30px
+}
+input{
+    width: 250px;
+    padding: 9px 15px;
+    background-color: rgb(17, 17, 17);
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 16px 0 0 16px;
+    outline: none;
+    color: white;
+    align-items: center;
+}
+button{
+    margin-left: -5px;
+    padding: 9px 17px 9px 15px;
+    border-radius: 0 16px 16px 0;
+    border: 1px solid rgb(33, 33, 33);
+    background-color: rgb(33, 33, 33);
+    cursor: pointer;
+    color: white;
+    align-items: center;
+
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #20AB65;
+    height: 60px;
+    width: 60px;
+    padding: 4px;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: scale .2s;
+}
+.whatsapp svg{
+    height: 70%;
+    width: 70%;    
+}
+.whatsapp:hover{
+    scale: 1.1;
+}
+.whatsapp:active{
+    scale: 1;
+}
+.popup{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.fillbox{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transform: translateX(390px);
+    transition: .5s;
+}
+.yespop{
+  opacity: 1;
+  visibility: visible;
+}
+.yespop .fillbox{
+  transform: translate(0px);
+}
+.card-container {
+  background-color: #1a1d21;
+  width: 360px;
+  padding: 28px 24px;
+  border-radius: 18px;
+  border: 1px solid #2d333b;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  background-color: #2b2e35;
+  border: 1px solid #3c424e;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #e2e8f0;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus {
+  border-color: #4b5563;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(180deg, #2f455a 0%, #223546 100%);
+  color: #ffffff;
+  border: 1px solid #3d5670;
+  border-radius: 22px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(180deg, #365069 0%, #283e52 100%);
+}
